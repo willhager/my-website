@@ -202,7 +202,7 @@ html.dark a{
     font-family: monospace
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     #resumeBox {
         margin-left: 5%;
         margin-right: 5%;
