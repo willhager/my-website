@@ -107,21 +107,21 @@ html.dark .nav-btn{
 .resume-text {
     text-align: left;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight:400
 }
 
 .resume-date{
     text-align: right;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight:400
 }
 
 .resume-ulist{
     text-align: left;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     margin-top: 0%;
     margin-bottom: 0%;
     list-style-position: inside;
@@ -130,8 +130,8 @@ html.dark .nav-btn{
 .resume-ulist li{
     font-weight:300;
     white-space: normal;
-    padding-left: 20px;
-    text-indent: -26px; 
+    padding-left: 1.25em;
+    text-indent: -1.25em; 
 }
 
 #resumeBox{
@@ -165,7 +165,7 @@ html.dark .nav-btn{
     padding: 10px 18px;
     border-radius: 999px;   /* makes pill shape */
     border: 2px solid darkgrey;
-    font-size: 14px;
+    font-size: 1.1em;
     transition: transform 0.2s ease, background-color 0.2s ease;
     cursor: default;        /* not clickable, but looks neat */
 }
@@ -177,7 +177,7 @@ html.dark .nav-btn{
 .about-links{
     font-family: monospace;
     color: black;
-    font-size: 20px;
+    font-size: 1.5em;
     display: block;
     text-align: right;
     padding-right: 10%;
@@ -189,8 +189,51 @@ html.dark .nav-btn{
 }
 
 .about-links .link-icon{
-    font-size: 30px
+    font-size: 1.3em;
 }
+
 html.dark a{
     color: whitesmoke
+}
+
+@media (max-width: 600px) {
+    #resumeBox {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #aboutBox {
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-links{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .nav-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    
+    .download-btn {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    .resume-text, .resume-date {
+        font-size: 1em;
+    }
+    
+    .resume-ulist li {
+        font-size: 0.9em;
+    }
+    
+    .skill {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
 }
