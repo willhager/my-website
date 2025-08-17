@@ -1,0 +1,196 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+html.dark body{
+  background-color: #262626;
+  color: lightgrey;
+}
+
+html.dark .theme-toggle {
+    color: whitesmoke;
+}
+
+.theme-toggle {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Header/Nav */
+nav {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background-color: transparent;
+  font-family:monospace
+}
+
+/* Nav buttons (styled links) */
+.nav-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: black;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hover effect */
+.nav-btn:hover {
+  cursor: pointer;
+  background-color: gray;
+  border-color: gray;
+  color: white;
+}
+
+/* Active page highlight */
+.nav-btn.active {
+    background-color: darkgray;
+    border-color: black;
+    color: white;
+}
+
+html.dark .nav-btn{
+    color:whitesmoke
+}
+
+.download-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    border-color: darkgrey;
+    background-color: darkgray;
+    color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.download-btn:hover{
+    background-color: grey;
+}
+
+.resumeH1 {
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+}
+
+.resumeHr {
+  border: .5px solid lightgrey;
+}
+
+.div-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0px
+}
+
+.resume-text {
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight:400
+}
+
+.resume-date{
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight:400
+}
+
+.resume-ulist{
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    list-style-position: inside;
+}
+
+.resume-ulist li{
+    font-weight:300;
+    white-space: normal;
+    padding-left: 20px;
+    text-indent: -26px; 
+}
+
+#resumeBox{
+    margin-left:25%;
+    margin-right:25%;
+}
+
+#aboutBox{
+    margin-left:25%;
+    margin-right:25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0px
+}
+
+.column {
+    flex: 1;            
+}
+
+#skillsTray {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: left;
+    font-family: monospace;
+}
+
+.skill {
+    background-color: transparent;
+    padding: 10px 18px;
+    border-radius: 999px;   /* makes pill shape */
+    border: 2px solid darkgrey;
+    font-size: 14px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: default;        /* not clickable, but looks neat */
+}
+
+.skill:hover {
+  transform: scale(1.1);  /* grows slightly */
+}
+
+.about-links{
+    font-family: monospace;
+    color: black;
+    font-size: 20px;
+    display: block;
+    text-align: right;
+    padding-right: 10%;
+    text-decoration:none
+}
+
+.about-links .link-text {
+  text-decoration: underline; /* underline only the text */
+}
+
+.about-links .link-icon{
+    font-size: 30px
+}
+html.dark a{
+    color: whitesmoke
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will Hager</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+    // Apply theme before page renders to prevent flash
+    (function() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        } else {
+        document.documentElement.classList.remove("dark");
+        }
+    })();
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <br>
+    <div class = div-flex>
+        <h1 style="margin-left: 25%; font-family:monospace">Will Hager</h1>
+        <a style = "margin-right: 25%;" class = download-btn href = "William Hager, Resume.pdf" download="William Hager, Resume.pdf"><i class="fa-solid fa-file-arrow-down"></i>  Download PDF</a>
+    </div>
+    <br>
+    <div id = "resumeBox">
+        <h1 class = resumeH1>Education</h1>
+        <hr class = resumeHr>
+        <div class = "div-flex">
+            <p class = resume-text>University of Rochester</p>
+            <p class = resume-date>Rochester, NY</p>
+        </div>
+        <ul class = resume-ulist>
+            <li>B.S. in Computer Science, Expected May 2028</li>
+            <li>GPA: 3.96/4.00</li>
+            <li>Coursework: Data Structures and Algorithms, Formal Models of Computing, Calculus II, Discrete Mathematics</li>
+        </ul>
+        <h1 class = resumeH1>Projects</h1>
+        <hr class = resumeHr>
+        <div class = "div-flex">
+            <p class = resume-text>Runesworn</p>
+            <p class = resume-date>Spring, Summer 2025</p>
+        </div>
+        <ul class = resume-ulist>
+            <li>Designed and developed a dice-rolling RPG video game with Godot engine and GDScript (Python), using over 2500 lines of code to implement turn based combat and character building</li>
+            <li>Created database and data management system to efficiently store and retrieve game and player data, including 12 unique encounters and 3 playable characters, as well as 12 unique dice</li>
+            <li>Established and balanced core game mechanics with a small-scale playtesting group in order to ensure balanced and enjoyable gameplay </li>
+        </ul>    
+        <div class = "div-flex">
+            <p class = resume-text>Street Mapper</p>
+            <p class = resume-date>Fall 2024</p>
+        </div>
+        <ul class = resume-ulist>
+            <li>Wrote over 880 lines of Java code to implement a street mapper that took coordinates inputs and generated a map using a self-implemented graph data structure</li>
+            <li>Displayed information in a Java Swing UI</li>
+            <li>Implemented Dijkstra's Shortest Path algorithm to simulate a navigation software experience</li>
+        </ul> 
+        <div class = "div-flex">
+            <p class = resume-text>Nondeterministic Automaton Simulator and Converter</p>
+            <p class = resume-date>Spring 2024</p>
+        </div>
+        <ul class = resume-ulist>
+            <li>Developed over 870 lines of C code to create a simulated Nondeterministic Finite Automaton (NFA) and conversion algorithm to a Deterministic Finite Automaton (DFA) using subset construction</li>
+            <li>Included custom NFA and DFA frameworks that can be used via header files for substring and binary character matching</li>
+        </ul> 
+        <h1 class = resumeH1>Job Experience</h1>
+        <hr class = resumeHr>
+        <div class = "div-flex">
+            <p class = resume-text>Lifeguard, Riverton Community Pool</p>
+            <p class = resume-date>Rochester, NY | Summer 2025</p>
+        </div>
+        <ul class = resume-ulist>
+            <li>Ensured pool patron safety through clear communication of pool rules as well as in-water rescues</li>
+            <li>Managed pool area and upkeep of pool facilities</li>
+            <li>Tracked and adjusted pool chemical levels</li>
+        </ul>
+        <div class = "div-flex">
+            <p class = resume-text>Swimming Instructor, Rush Henrietta CSD</p>
+            <p class = resume-date>Rochester, NY | Winter 2021-Winter 2023</p>
+        </div>
+        <ul class = resume-ulist>
+            <li>Taught American Red Cross Learn to Swim courses from levels 1-6, as well as baby/toddler courses and adult swimmers</li>
+            <li>Worked with children and parents to ensure students understood proper pool safety</li>
+        </ul>
+        <h1 class = resumeH1>Skills</h1>
+        <hr class = resumeHr>
+        <ul class = resume-ulist>
+            <li><strong>Programming Languages:</strong> Java, C, Python, GDScript, HTML/CSS</li>
+            <li><strong>Frameworks:</strong> Java Swing, Java AWT, JavaFX, LibGDX</li>
+            <li><strong>Technical Skills:</strong> Object-Oriented Programming, Linux/Unix, Visual Studio Code, Valgrind, Front End Web Development</li>
+        </ul> 
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <script src="main.js"></script>
+
+    </div>
+</body>
+</html>

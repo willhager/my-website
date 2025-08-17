@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Will Hager</title>
+    <script>
+    (function() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        } else {
+        document.documentElement.classList.remove("dark");
+        }
+    })();
+    </script>
+</head>
+<body>
+    <header></header>
+    <br>
+    <br>
+    <div id = aboutBox>
+        <div class = column>
+            <img src = "senior-pic-2.JPG", alt = "Image of a white man, brown hair, brown eyes, wearing a green sweater and smiling while looking to his left." width = 340px>
+            <br>
+            <br>
+            <a href = "https://github.com/willhager" target="_blank" rel="noopener noreferrer", class = about-links>
+                <span class = link-text>github</span>
+                <span class = link-icon><i class="fa-brands fa-github"></i></i></span>
+            </a>
+            <a href = "https://www.linkedin.com/in/will-hager-142866354" target="_blank" rel="noopener noreferrer", class = about-links>
+                <span class = link-text>linkedin</span>
+                <span class = link-icon><i class="fa-brands fa-linkedin"></i></span>
+            </a>
+            <a href = "mailto:whager@duck.com" target="_blank" class = about-links>
+                <span class = link-text>email</span>
+                <span class = link-icon><i class="fa-solid fa-envelope"></i></span>
+            </a>
+
+        </div>
+        <div class = column>
+            <p><i class="fa-solid fa-location-dot"></i> Rochester, NY</p>
+            <p>Hi, I'm Will! I'm a second year computer science student at the University of Rochester. I'm interested in machine learning, video game development, and web development.</p>
+            <p>Outside of programming, I enjoy third-wave coffee and espresso, traditional/instinctive archery, and baking!</p>
+            <br>
+            <br>
+            <br>
+            <p>skills:</p>
+            <div id="skillsTray">
+            <div class="skill">java</div>
+            <div class="skill">c</div>
+            <div class="skill">godot</div>
+            <div class="skill">gdscript</div>
+            <div class="skill">python</div>
+            <div class="skill">html</div>
+            <div class="skill">css</div>
+            <div class="skill">vscode</div>
+            <div class="skill">git</div>
+
+            </div>
+            
+        </div>
+    </div>
+    <script src = "main.js"></script>
+</body>
+</html>
