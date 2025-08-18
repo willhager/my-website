@@ -6,12 +6,29 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector("header").innerHTML = data;
 
       // Highlight active nav button
-      const currentPage = window.location.pathname.split("/").pop();
+      let currentPage = window.location.pathname.split("/").pop();
+
+      // If no filename (homepage), assume index.html
+      if (!currentPage) {
+        currentPage = "index.html";
+      }
+
+      let foundActive = false;
+
       document.querySelectorAll(".nav-btn").forEach(btn => {
         if (btn.getAttribute("data-page") === currentPage) {
           btn.classList.add("active");
+          foundActive = true;
         }
       });
+
+      // Fallback: if no match found, default to Home button
+      if (!foundActive) {
+        const homeBtn = document.querySelector('.nav-btn[data-page="index.html"]');
+        if (homeBtn) {
+          homeBtn.classList.add("active");
+        }
+      }
 
       // Theme toggle
       const btn = document.querySelector(".theme-toggle");

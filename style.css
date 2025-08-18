@@ -136,21 +136,28 @@ html.dark .nav-btn{
 }
 
 #resumeBox{
-    margin-left:25%;
-    margin-right:25%;
+    max-width: 800px;   /* content area width cap */
+    margin: 0 auto;     /* auto side margins center the box */
+    padding: 0 20px;
 }
 
 #aboutBox{
-    margin-left:25%;
-    margin-right:25%;
+    max-width: 800px;   /* content area width cap */
+    margin: 0 auto;     /* auto side margins center the box */
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:0px
 }
 
 .column {
     flex: 1;            
+}
+
+.column img{
+    display:block;
+    margin-left:auto;
+    margin-right: 8%;
 }
 
 #skillsTray {
@@ -181,8 +188,9 @@ html.dark .nav-btn{
     font-size: 1.5em;
     display: block;
     text-align: right;
-    padding-right: 10%;
+    padding-right: 8%;
     text-decoration:none
+    
 }
 
 .about-links .link-text {
@@ -202,6 +210,7 @@ html.dark a{
     font-family: monospace;
 }
 
+
 @media (max-width: 600px) {
     #resumeBox {
         margin-left: 5%;
@@ -219,11 +228,17 @@ html.dark a{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 10px;
+        gap: 0px;
     }
 
     .resume-h1{
         margin-left: 0%; 
+        text-align: center;
+    }
+
+    .resumeH1{
+        margin-left: 0%; 
+        text-align: center;
     }
 
     .download-btn{
@@ -239,6 +254,11 @@ html.dark a{
         font-size: 16px;
         padding: 8px 16px;
     }
+
+    nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     
     .download-btn {
         font-size: 16px;
@@ -247,11 +267,17 @@ html.dark a{
     
     .resume-text, .resume-date {
         font-size: 1em;
+        text-align: center;
     }
     
     .resume-ulist li {
         font-size: 0.9em;
     }
+
+    .resume-ulist {
+        margin-bottom: 5%;
+    }
+    
     
     .skill {
         font-size: 0.9em;
