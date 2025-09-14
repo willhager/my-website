@@ -68,7 +68,7 @@ html.dark .nav-btn{
 
 .download-btn{
     display: inline-block;
-    /*margin-right: 25%;*/
+    margin-right: 25%;
     text-decoration: none;
     font-size: 20px;
     font-family:monospace;
@@ -206,7 +206,7 @@ html.dark a{
 }
 
 .resume-h1{
-    /*margin-left: 25%; */
+    margin-left: 25%; 
     font-family: monospace;
 }
 
