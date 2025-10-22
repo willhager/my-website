@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Handle cases:
       // - If empty or "index.html" → home
       // - If folder (like /about) → use folder name
-      if (!currentPage || currentPage === "index.html") {
-        currentPage = "index";
+      if (!currentPage || currentPage === "index.html" || currentPage === "") {
+        currentPage = "resume";
       }
 
       // Highlight active nav button
