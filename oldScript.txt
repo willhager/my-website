@@ -1,27 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Load header
-  fetch("/header.html")
+  fetch("header.html")
     .then(response => response.text())
     .then(data => {
       document.querySelector("header").innerHTML = data;
 
-      // --- Determine current page/folder ---
-      let path = window.location.pathname;
+      // Highlight active nav button
+      let currentPage = window.location.pathname.split("/").pop();
 
-      // Normalize (remove trailing slash)
-      if (path.endsWith("/")) path = path.slice(0, -1);
-
-      // Extract folder name or file name
-      let currentPage = path.split("/").pop();
-
-      // Handle cases:
-      // - If empty or "index.html" → home
-      // - If folder (like /about) → use folder name
-      if (!currentPage || currentPage === "index.html") {
-        currentPage = "index";
+      // If no filename (homepage), assume index.html
+      if (!currentPage) {
+        currentPage = "index.html";
       }
 
-      // Highlight active nav button
       let foundActive = false;
 
       document.querySelectorAll(".nav-btn").forEach(btn => {
@@ -31,15 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Fallback to home
+      // Fallback: if no match found, default to Home button
       if (!foundActive) {
-        const homeBtn = document.querySelector('.nav-btn[data-page="index"]');
+        const homeBtn = document.querySelector('.nav-btn[data-page="index.html"]');
         if (homeBtn) {
           homeBtn.classList.add("active");
         }
       }
 
-      // --- Theme toggle ---
+      // Theme toggle
       const btn = document.querySelector(".theme-toggle");
       const icon = btn.querySelector("i");
 
@@ -48,14 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const isDark = document.documentElement.classList.contains("dark");
         localStorage.setItem("theme", isDark ? "dark" : "light");
 
+        // Update icon
         icon.classList.toggle("fa-moon", !isDark);
         icon.classList.toggle("fa-sun", isDark);
       });
 
-      // --- Apply saved theme ---
+      // Ensure correct icon on page load
       const savedTheme = localStorage.getItem("theme");
       if (savedTheme === "dark") {
-        document.documentElement.classList.add("dark");
         icon.classList.remove("fa-moon");
         icon.classList.add("fa-sun");
       } else {
