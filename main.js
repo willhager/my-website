@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let path = window.location.pathname;
 
       // Normalize (remove trailing slash)
-      if (path.endsWith("/")) path = path.slice(0, -1);
+      if (path === "/" || path.endsWith("/")) path = path.slice(0, -1);
 
       // Extract folder name or file name
       let currentPage = path.split("/").pop();
