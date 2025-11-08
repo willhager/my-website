@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let currentPage = path.split("/").pop();
 
-      if (path === "/" || path.endsWith("/")) path = path.slice(0, -1);
+      if (path.endsWith("/")) path = path.slice(0, -1);
 
       if (!currentPage || currentPage === "index.html" || currentPage === "") {
         currentPage = "resume";
