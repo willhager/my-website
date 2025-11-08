@@ -5,15 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector("header").innerHTML = data;
 
       let path = window.location.pathname;
+      let segments = path.split("/").filter(Boolean);
+      let currentPage = segments.pop() || "index"; // e.g. "about", "resume", or "index"
 
-      let currentPage = path.split("/").pop();
-
-      if (path.endsWith("/")) path = path.slice(0, -1);
-
-      if (!currentPage || currentPage === "index.html" || currentPage === "") {
-        currentPage = "resume";
-      }
-
+      // Highlight the current nav button
       let foundActive = false;
 
       document.querySelectorAll(".nav-btn").forEach(btn => {
@@ -25,9 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!foundActive) {
         const homeBtn = document.querySelector('.nav-btn[data-page="index"]');
-        if (homeBtn) {
-          homeBtn.classList.add("active");
-        }
+        if (homeBtn) homeBtn.classList.add("active");
       }
 
       const btn = document.querySelector(".theme-toggle");
