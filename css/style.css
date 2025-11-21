@@ -1,17 +1,18 @@
 body {
-    background-color: whitesmoke;
+    background-color: #F4EFE5;
+    color: #0C0F18;
     margin: 0;
     font-family: "Roboto", sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
 
 html.dark body{
-  background-color: #262626;
-  color: lightgrey;
+  background-color: #0C0F18;
+  color: #F4EFE5;
 }
 
 html.dark .theme-toggle {
-    color: whitesmoke;
+    color: #F4EFE5;
 }
 
 .theme-toggle {
@@ -57,20 +58,20 @@ nav {
 /* Hover effect */
 .nav-btn:hover {
   cursor: pointer;
-  background-color: gray;
-  border-color: gray;
-  color: white;
+  background-color: #373E48;
+  border-color: #373E48;
+  color: #F4EFE5;
 }
 
 /* Active page highlight */
 .nav-btn.active {
-    background-color: darkgray;
+    background-color: #55606F;
     border-color: black;
-    color: white;
+    color: #F4EFE5;
 }
 
 html.dark .nav-btn{
-    color:whitesmoke
+    color: #F4EFE5
 }
 
 .download-btn{
@@ -84,15 +85,15 @@ html.dark .nav-btn{
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 8px;
-    border-color: darkgrey;
-    background-color: darkgray;
-    color: white;
+    border-color: #55606F;
+    background-color: #55606F;
+    color: #F4EFE5;
     transition: background-color 0.3s, border-color 0.3s;
     cursor: pointer;
 }
 
 .download-btn:hover{
-    background-color: grey;
+    background-color: #373E48;
 }
 
 .resumeH1 {
@@ -102,7 +103,7 @@ html.dark .nav-btn{
 }
 
 .resumeHr {
-  border: .5px solid lightgrey;
+  border: .5px solid #55606F;
 }
 
 .div-flex {
@@ -208,7 +209,7 @@ html.dark .nav-btn{
 }
 
 html.dark a{
-    color: whitesmoke
+    color: #F4EFE5
 }
 
 .resume-h1{
