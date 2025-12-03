@@ -143,13 +143,13 @@ html.dark .nav-btn{
     text-indent: -1.25em; 
 }
 
-#resumeBox{
+.resumeBox{
     max-width: 800px;   /* content area width cap */
     margin: 0 auto;     /* auto side margins center the box */
     padding: 0 20px;
 }
 
-#aboutBox{
+.aboutBox{
     max-width: 800px;   /* content area width cap */
     margin: 0 auto;     /* auto side margins center the box */
     padding: 0 20px;
@@ -219,12 +219,12 @@ html.dark a{
 
 
 @media (max-width: 600px) {
-    #resumeBox {
+    .resumeBox {
         margin-left: 5%;
         margin-right: 5%;
     }
 
-    #aboutBox {
+    .aboutBox {
         margin-left: 5%;
         margin-right: 5%;
         flex-direction: column;
