@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel = "stylesheet" href = "/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Will Hager</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <script>
+    (function() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        } else {
+        document.documentElement.classList.remove("dark");
+        }
+    })();
+    </script>
 </head>
 <body>
     <header></header>
-    <p></p>
+    <br>
+    <br>
+    <div class = resumeBox>
+        <h1 class = resume-h1>Gallery</h1>
+        <p>This is a page detailing all of my extracurricular activities. Outside of programming I take part in a bunch of hobbies and activities: fencing, hiking, biking, making coffee, traveling, and baking!</p>
+    </div>
+    <div class = aboutbox>
+        <div class = column>
+            <img id = "bikingImg" src = "/biking.jpg", alt = "Image of 2 men, one in the foreground and one in the background. The one in the background is riding a bike." width = 340px, style = "text-align:right">
+        </div>
+        <div class = column>
+            <p>On October 3, I </p>
+        </div>
     <script src="main.js"></script>
 </body>
 </html>
