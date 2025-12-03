@@ -11,7 +11,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <script>
-    // Apply theme before page renders to prevent flash
     (function() {
         const savedTheme = localStorage.getItem("theme");
         if (savedTheme === "dark") {
@@ -26,7 +25,7 @@
 <body>
     <header></header>
     <br>
-    <div id = "resumeBox">
+    <div class = resumeBox>
         <div class = div-flex>
             <h1 class = resume-h1>Will Hager</h1>
             <a class = download-btn href = "/William Hager, Resume.pdf" download="William Hager, Resume.pdf"><i class="fa-solid fa-file-arrow-down"></i>  Download PDF</a>
@@ -51,7 +50,7 @@
         </div>
         <ul class = resume-ulist>
             <li>Contributed to development of SOPHIE, a virtual LLM-based avatar designed to help medical professionals improve bedside manner and deliver difficult news to patients</li>
-            <li>Assisted in curating and selecting training data to improve model realism and create a human-like experience</li>
+            <li>Assisted in curating and synthetically generating training data to improve model realism and create a human-like experience</li>
             <li>Collaborated with multidisciplinary research team in weekly lab meetings to evaluate project progress and provide feedback on usability and AI-driven computing</li>
         </ul>
         <div class = "div-flex">
