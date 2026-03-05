@@ -2,7 +2,7 @@ body {
     background-color: #F4EFE5;
     color: #0C0F18;
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;    
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -92,171 +92,15 @@ html.dark .nav-btn{
     cursor: pointer;
 }
 
-.download-btn:hover{
-    background-color: #373E48;
-}
-
-.resumeH1 {
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-size: 23px;
-}
-
-.resumeHr {
-  border: .5px solid #55606F;
-}
-
-.div-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom:0px
-}
-
-.resume-text {
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.25em;
-    font-weight:400
-}
-
-.resume-date{
-    text-align: right;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.25em;
-    font-weight:400
-}
-
-.resume-ulist{
-    text-align: left;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.25em;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    list-style-position: inside;
-}
-
-.resume-ulist li{
-    font-weight:300;
-    white-space: normal;
-    padding-left: 1.25em;
-    text-indent: -1.25em; 
-}
-
-.resumeBox{
-    max-width: 800px;   /* content area width cap */
-    margin: 0 auto;     /* auto side margins center the box */
-    padding: 0 20px;
-}
-
-.aboutBox{
-    max-width: 800px;   /* content area width cap */
-    margin: 0 auto;     /* auto side margins center the box */
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.column {
-    flex: 1;            
-}
-
-.column img{
-    display:block;
-    margin-left:auto;
-    margin-right: 8%;
-}
-
-#skillsTray {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: left;
-    font-family: monospace;
-}
-
-.skill {
-    background-color: transparent;
-    padding: 10px 18px;
-    border-radius: 999px;   /* makes pill shape */
-    border: 2px solid darkgrey;
-    font-size: 1.1em;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    cursor: default;        /* not clickable, but looks neat */
-}
-
-.skill:hover {
-  transform: scale(1.1);  /* grows slightly */
-}
-
-.about-links{
-    font-family: monospace;
-    color: black;
-    font-size: 1.5em;
-    display: block;
-    text-align: right;
-    padding-right: 8%;
-    text-decoration:none
-}
-
-.about-links .link-text {
-  text-decoration: underline; /* underline only the text */
-}
-
-.about-links .link-icon{
-    font-size: 1.0em;
-}
-
 html.dark a{
-    color: #F4EFE5
+    color: #F4EFE5;
 }
 
-.resume-h1{
-    /*margin-left: 25%; */
-    font-family: monospace;
+a{
+    color: #0C0F18;
 }
-
 
 @media (max-width: 600px) {
-    .resumeBox {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .aboutBox {
-        margin-left: 5%;
-        margin-right: 5%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .div-flex {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 0px;
-    }
-
-    .resume-h1{
-        margin-left: 0%; 
-        text-align: center;
-    }
-
-    .resumeH1{
-        margin-left: 0%; 
-        text-align: center;
-    }
-
-    .download-btn{
-        margin-right: 0%;
-    }
-
-    .about-links{
-        text-align: center;
-        padding-right: 0;
-    }
-
     .nav-btn {
         font-size: 16px;
         padding: 8px 16px;
@@ -265,29 +109,5 @@ html.dark a{
     nav{
         justify-content: center;
         flex-wrap: wrap;
-    }
-    
-    .download-btn {
-        font-size: 16px;
-        padding: 6px 12px;
-    }
-    
-    .resume-text, .resume-date {
-        font-size: 1em;
-        text-align: center;
-    }
-    
-    .resume-ulist li {
-        font-size: 0.9em;
-    }
-
-    .resume-ulist {
-        margin-bottom: 5%;
-    }
-    
-    
-    .skill {
-        font-size: 0.9em;
-        padding: 8px 16px;
     }
 }

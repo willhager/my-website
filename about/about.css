@@ -1,0 +1,77 @@
+.aboutBox{
+    max-width: 800px;   /* content area width cap */
+    margin: 0 auto;     /* auto side margins center the box */
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex: 1;            
+}
+
+.column img{
+    display:block;
+    margin-left:auto;
+    margin-right: 8%;
+}
+
+.skillsTray {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: left;
+    font-family: monospace;
+}
+
+.skill {
+    background-color: transparent;
+    padding: 10px 18px;
+    border-radius: 999px;   /* makes pill shape */
+    border: 2px solid darkgrey;
+    font-size: 1.1em;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: default;        /* not clickable, but looks neat */
+}
+
+.skill:hover {
+  transform: scale(1.1);  /* grows slightly */
+}
+
+.about-links{
+    font-family: monospace;
+    color: black;
+    font-size: 1.5em;
+    display: block;
+    text-align: right;
+    padding-right: 8%;
+    text-decoration:none
+}
+
+.about-links .link-text {
+  text-decoration: underline; /* underline only the text */
+}
+
+.about-links .link-icon{
+    font-size: 1.0em;
+}
+
+@media (max-width: 600px) {
+    .aboutBox {
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-links{
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .skill {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}

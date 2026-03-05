@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will Hager</title>
     <meta name = "description" content = "Personal page for Will Hager, a second year computer science student at University of Rochester">
-    <link rel = "stylesheet" href = "/css/style.css">
+    <link rel = "stylesheet" href = "./resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script>
     (function() {
         const savedTheme = localStorage.getItem("theme");
@@ -38,8 +41,8 @@
         </div>
         <ul class = resume-ulist>
             <li>B.S. in Computer Science, Expected May 2028</li>
-            <li>GPA: 3.96/4.00</li>
-            <li>Coursework: Data Structures and Algorithms, Formal Models of Computing, Advanced Algorithms/Algorithm Optimization, Linear Algebra, Calculus II</li>
+            <li>GPA: 3.95/4.00</li>
+            <li>Coursework: Advanced Algorithmic Design, Introduction to AI/ML, Formal Computational Models and Limitations, Calculus I & II, Linear Algebra/Differential Equations</li>
         </ul>
 
         <h1 class = resumeH1>Work Experience</h1>
@@ -49,9 +52,17 @@
             <p class = resume-date>Rochester, NY | Fall 2025 - Present</p>
         </div>
         <ul class = resume-ulist>
-            <li>Contributed to development of SOPHIE, a virtual LLM-based avatar designed to help medical professionals improve bedside manner and deliver difficult news to patients</li>
-            <li>Assisted in curating and synthetically generating training data to improve model realism and create a human-like experience</li>
-            <li>Collaborated with multidisciplinary research team in weekly lab meetings to evaluate project progress and provide feedback on usability and AI-driven computing</li>
+            <li>Contributed to development of HAL (Human Aligned LLM), a framework for LLM alignment with emphasis on inducing human-likeness traits.
+                    <a style="margin-left: 1.5rem" href="https://arxiv.org/pdf/2601.02813v2" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </a> 
+            </li>
+            <li>Selected and curated training data for DPO algorithm to improve model realism, increasing win-rate on a human-likeness Turing test from 53% to 62%</li>
+            <li>Developed and implemented Turing-Bench, a HuggingFace LLM Benchmark that evaluates model submissions on ability to recognize if a generated conversation is human/AI or AI/AI
+                <a style="margin-left: 1.5rem" href="https://huggingface.co/datasets/roc-hci/Turing-Bench" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                </a> 
+            </li>
         </ul>
         <div class = "div-flex">
             <p class = resume-text>Lifeguard, Riverton Community Pool</p>
@@ -66,6 +77,19 @@
         <h1 class = resumeH1>Projects</h1>
         <hr class = resumeHr>
         <div class = "div-flex">
+            <p class = resume-text>University of Rochester Baja SAE Website 
+                <a href="https://urbajasae.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+            </p>
+            <p class = resume-date>Winter 2025/2026</p>
+        </div>
+        <ul class = resume-ulist>
+            <li>Designed and built a custom full stack web application with over 3500 lines of code using a React + Netlify Serverless + MongoDB stack</li>
+            <li>Implemented an Auth0 protected schema-based CMS layer to allow non-coding administrators to update dynamic content without code changes</li>
+            <li>Built scalable backend services using RESTful methods to ensure longevity and stability</li>
+        </ul> 
+        <div class = "div-flex">
             <p class = resume-text>Runesworn</p>
             <p class = resume-date>Spring, Summer 2025</p>
         </div>
@@ -75,15 +99,6 @@
             <li>Established and balanced core game mechanics with a small-scale playtesting group in order to ensure balanced and enjoyable gameplay</li>
             <li>Managed game lifecycle with expected beta release in December 2025</li>
         </ul>    
-        <div class = "div-flex">
-            <p class = resume-text>Street Mapper</p>
-            <p class = resume-date>Fall 2024</p>
-        </div>
-        <ul class = resume-ulist>
-            <li>Wrote over 880 lines of Java code to implement a street mapper that took coordinate inputs and generated a map using a self-implemented graph data structure</li>
-            <li>Displayed information in a Java Swing UI</li>
-            <li>Implemented Dijkstra's Shortest Path algorithm to simulate a navigation software experience</li>
-        </ul> 
         <div class = "div-flex">
             <p class = resume-text>Nondeterministic Automaton Simulator and Converter</p>
             <p class = resume-date>Spring 2024</p>

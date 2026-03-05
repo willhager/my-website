@@ -1,0 +1,101 @@
+.resumeH1 {
+    text-align: left;
+    font-size: 23px;
+}
+
+.resumeHr {
+  border: .5px solid #55606F;
+}
+
+.div-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0px
+}
+
+.resume-text {
+    text-align: left;
+    font-size: 1.25em;
+    font-weight:400
+}
+
+.resume-date{
+    text-align: right;
+    font-size: 1.25em;
+    font-weight:400
+}
+
+.resume-ulist{
+    text-align: left;
+    font-size: 1.25em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    list-style-position: inside;
+}
+
+.resume-ulist li{
+    font-weight:300;
+    white-space: normal;
+    padding-left: 1.25em;
+    text-indent: -1.25em; 
+}
+
+.resumeBox{
+    max-width: 800px;   /* content area width cap */
+    margin: 0 auto;     /* auto side margins center the box */
+    padding: 0 20px;
+}
+
+.resume-h1{
+    /*margin-left: 25%; */
+    font-family: monospace;
+}
+
+.download-btn:hover{
+    background-color: #373E48;
+}
+
+@media (max-width: 600px) {
+    .download-btn {
+        font-size: 16px;
+        padding: 6px 12px;
+        margin-right: 0px;
+    }
+    
+    .resume-text, .resume-date {
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    .resume-ulist li {
+        font-size: 0.9em;
+    }
+
+    .resume-ulist {
+        margin-bottom: 5%;
+    }
+
+    .resumeBox {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .div-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0px;
+    }
+
+    .resume-h1{
+        margin-left: 0%; 
+        text-align: center;
+    }
+
+    .resumeH1{
+        margin-left: 0%; 
+        text-align: center;
+    }
+
+}
