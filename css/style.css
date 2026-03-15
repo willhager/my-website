@@ -74,24 +74,6 @@ html.dark .nav-btn{
     color: #F4EFE5
 }
 
-.download-btn{
-    display: inline-block;
-    /*margin-right: 25%;*/
-    text-decoration: none;
-    font-size: 20px;
-    font-family:monospace;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 8px;
-    border-color: #55606F;
-    background-color: #55606F;
-    color: #F4EFE5;
-    transition: background-color 0.3s, border-color 0.3s;
-    cursor: pointer;
-}
-
 html.dark a{
     color: #F4EFE5;
 }
