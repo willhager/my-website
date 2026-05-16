@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./projects.css">
+    <link rel = "stylesheet" href = "/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <title>Will Hager</title>
+
+    <script>
+    (function() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
+        } else {
+        document.documentElement.classList.remove("dark");
+        }
+    })();
+    </script>
+
+</head>
+<body>
+    <header></header>
+    <div class = "gallery-container">
+        <div class = gallery-row>
+            <div class = "gallery-row-left">
+                <a href="https://urbajasae.com" target="_blank" ref = "noopener noreferrer"><img src="./urbajasite.png"></a>
+            </div>      
+            <div class = "gallery-row-right">
+                <h2>Yellowjacket Racing Website</h2>
+                <p>This is a club website that I built for the University of Rochester BAJA SAE team. It's built on a React + JS + MongoDB stack, with a schema-driven CMS architecture.</p>
+                <p>The frontend design specs were given to me by the BAJA club, but the implementation and backend was all done by me. The project taught me a lot about fullstack development and scalable architecture; it was the largest public-facing project that I had worked on at the time.</p>
+            </div>     
+        </div>
+        <div class = "gallery-row">
+            <div class = "gallery-row-left">
+                <h2>Runesworn</h2>
+                <p>This is a work-in-progress dicerolling RPG video game being built in Godot. Though it's only partially finished, the final goal is to create a rogue-lite dungeon crawler with a combat system based on rolling dice.</p>
+                <p>The architecture is built entirely in Godot and has taught me quite a bit about project pacing, large-scale software design, and code modularity.</p>
+                <p>A limited alpha release + playable demo will hopefully be out soon!</p>
+            </div>
+            <div class = "gallery-row-right">
+                <a href="https://github.com/willhager/runesworn" target="_blank" ref="noopener noreferrer"><img src="./runesworn.png"></a>
+            </div>
+        </div>
+        <div class = gallery-row>
+            <div class = "gallery-row-left">
+                <a href="https://willhager.github.io/catgpt" target="_blank" ref = "noopener noreferrer"><img src="./catgpt.png"></a>
+            </div>      
+            <div class = "gallery-row-right">
+                <h2>CatGPT</h2>
+                <p>This was a very simple project that I put together in just a few days. It's built on an idea that came to me in my sleep: mapping cosine similarity of an input to food-related terms, and using it to jokingly simulate animal behavior.</p>
+                <p>The project itself was quite simple, but I had a lot of fun putting it together; it was certainly a reminder of the joys of little projects.</p>
+            </div>     
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>

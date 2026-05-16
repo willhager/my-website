@@ -42,7 +42,7 @@
 }
 
 .resumeBox{
-    max-width: 800px;   /* content area width cap */
+    max-width: 50%;   /* content area width cap */
     margin: 0 auto;     /* auto side margins center the box */
     padding: 0 20px;
 }
