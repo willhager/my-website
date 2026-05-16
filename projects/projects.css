@@ -23,12 +23,15 @@ img:hover {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    border: 2px solid #55606F;
     padding: 1.5rem;
     border-radius: 16px;
     align-items: center;
 }
 
+.gallery-hr {
+    border: 0.5px solid #55606F;
+    width: 100%;
+}
 .gallery-row h2 {
     margin-top: 0;
 }
