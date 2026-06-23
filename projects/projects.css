@@ -35,3 +35,9 @@ img:hover {
 .gallery-row h2 {
     margin-top: 0;
 }
+
+@media (max-width: 800px) {
+    .gallery-row {
+        flex-direction: column;
+    }
+}
